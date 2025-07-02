@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Capture Moments</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial;
+        background: linear-gradient(to right, #2c3e50, #3498db);
+        background-image: url("/static/images/beach.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        margin: 0;
+        color: white;
+        text-align: center;
+        padding-top: 100px;
+      }
+
+    h1 {
+      font-size: 3.5rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+      letter-spacing: 1px;
+      color: #2c3e50;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.1);
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+      color: #555;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .button {
+      background-color: #3498db;
+      color: #ffffff;
+      padding: 14px 28px;
+      font-size: 1rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .button:hover {
+      background-color: #2980b9;
+      transform: scale(1.05);
+      box-shadow: 0 10px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+      .button {
+        width: 100%;
+        max-width: 240px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Capture Moments</h1>
+  <p>Your go-to platform for booking professional photographers!</p>
+
+  <div class="buttons">
+    <a href="/book" class="button">Book a Photographer</a>
+    <a href="/show-photographers" class="button">View Photographers</a>
+  </div>
+
+</body>
+</html>
